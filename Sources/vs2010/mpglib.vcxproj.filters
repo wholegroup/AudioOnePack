@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{41c7f013-4a56-4b76-87f8-8867d7633885}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{50f33ce6-f74e-46c4-8e29-580b78bd7985}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lame-3.99.5\mpglib\common.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\dct64_i386.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\decode_i386.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\interface.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\layer1.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\layer2.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\layer3.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lame-3.99.5\mpglib\tabinit.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lame-3.99.5\mpglib\common.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\dct64_i386.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\decode_i386.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\huffman.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\interface.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\l2tables.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\layer1.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\layer2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\layer3.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\mpg123.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\mpglib.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lame-3.99.5\mpglib\tabinit.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\lame-3.99.5\configMS.h">
+      <Filter>Include</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

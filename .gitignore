@@ -9,4 +9,6 @@
 [Ss]ources/vs2010/[Dd]ebug
 [Ss]ources/vs2010/x64
 [Ss]ources/vs2010/ipch/
+[Ss]ources/vs2010/ia32/
+[Ss]ources/Audio One Pack/obj/
 Icons.wxs

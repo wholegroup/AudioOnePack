@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDS_MUSICCD_INSERTBLANK" xml:space="preserve">
+    <value>Please insert a blank CD!</value>
+    <comment>Вставьте чистый диск</comment>
+  </data>
+  <data name="IDS_RIPCD_UNKNOWTITLE" xml:space="preserve">
+    <value>Unknow Title</value>
+    <comment>Неизвестное название</comment>
+  </data>
+  <data name="IDS_AUDIOBURN_ERRORDELTEMP" xml:space="preserve">
+    <value>Error attempting to delete '{0:C}' temporary directory. {1:C}</value>
+    <comment>Ошибка удаления временной директории</comment>
+  </data>
+  <data name="IDS_AUDIOBURN_BURN" xml:space="preserve">
+    <value>Audio CD burning...</value>
+    <comment>Прожиг Audio CD ...</comment>
+  </data>
+  <data name="IDS_CAPTION_RIP" xml:space="preserve">
+    <value>Audio CD Ripper :: Audio One Pack</value>
+    <comment>Заголовок окна граббинга</comment>
+  </data>
+  <data name="IDS_TABCONVERTER" xml:space="preserve">
+    <value>Music Converter</value>
+    <comment>Закладка конвертирования музыки</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="disc_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\disc info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_DEVICENOTFOUND_CAPTION" xml:space="preserve">
+    <value>Error</value>
+    <comment>Заголовок IDS_DEVICENOTFOUND</comment>
+  </data>
+  <data name="IDS_RIPFREEDB_NOTACCESS" xml:space="preserve">
+    <value>Unable to access CD Drive:</value>
+    <comment>Нет доступа к диску</comment>
+  </data>
+  <data name="IDS_ORDER_LINK" xml:space="preserve">
+    <value>http://www.audioonepack.com/order.xhtml</value>
+    <comment>Ссылка на страницу покупки</comment>
+  </data>
+  <data name="IDS_DISKINFO_SESSION" xml:space="preserve">
+    <value>Session {0:D}</value>
+    <comment>Сессия в диалоге информации о диске</comment>
+  </data>
+  <data name="IDS_RIPPROCESS_INFO" xml:space="preserve">
+    <value>Processing of Audio Track #{0:D} ({1:D}/{2:D})</value>
+    <comment>Обработка трека X из Y</comment>
+  </data>
+  <data name="IDS_CAPTION_CONVERT" xml:space="preserve">
+    <value>Music Converter :: Audio One Pack</value>
+    <comment>Заголовок окна конвертирования музыки</comment>
+  </data>
+  <data name="IDS_CONVERTPROCESS_CURRENTFILE" xml:space="preserve">
+    <value>Current file: {0:C}</value>
+    <comment>Текущий файл</comment>
+  </data>
+  <data name="erasecd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\erasecd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_AUDIOBURN_ERRORTMP_CAPTION" xml:space="preserve">
+    <value>Error</value>
+    <comment>Заголовок IDS_AUDIOBURN_ERRORTMP</comment>
+  </data>
+  <data name="IDS_MUSICCD_EXISTDIR" xml:space="preserve">
+    <value>Directory with this name already exists! Please, change the name.</value>
+    <comment>Директория с таким именем уже существует. Смените её название.</comment>
+  </data>
+  <data name="IDS_RIPFREEDB_ERRORRESULT" xml:space="preserve">
+    <value>Unable to retrieve cd entry. Code:</value>
+    <comment>Ошибка разбора ответа с FREEDB</comment>
+  </data>
+  <data name="IDS_ANALYZEPROCESS_ANALYZE" xml:space="preserve">
+    <value>{0:D}/{1:D} files analyzing is in progress</value>
+    <comment>Анализ X файла из Y</comment>
+  </data>
+  <data name="IDS_TABMUSIC" xml:space="preserve">
+    <value>Music CD Creator</value>
+    <comment>Закладка создания музыкального CD</comment>
+  </data>
+  <data name="IDS_REGISTRATION_CANCEL" xml:space="preserve">
+    <value>The key you entered is not valid!</value>
+    <comment>Сообщение в случае ввода не правильного ключа</comment>
+  </data>
+  <data name="IDS_AUDIOCD_UNABLEADD" xml:space="preserve">
+    <value>Unable to add file '{0:C}'. You may add not more than 100 tracks.</value>
+    <comment>Невозможно добавить трек. Можно добавлять не более 100.</comment>
+  </data>
+  <data name="IDS_ERASECDRW_NOTERASE" xml:space="preserve">
+    <value>This disc is not rewritable and therefore cannot be erased. Please insert a rewritable disc.</value>
+    <comment>Диск не является стираемым</comment>
+  </data>
+  <data name="rip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\rip.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPPROCESS_ERRORTMP" xml:space="preserve">
+    <value>Error attempting to create temporary files</value>
+    <comment>Ошибка создания временных файлов</comment>
+  </data>
+  <data name="IDS_TRIAL_MUSIC" xml:space="preserve">
+    <value>Unregistered version allows to burn 100 Mb maximum</value>
+    <comment>Сообщение в незарегистрированной версии при записи Music CD</comment>
+  </data>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\next.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPCD_MENU_SELECT" xml:space="preserve">
+    <value>Select</value>
+    <comment>Выделить</comment>
+  </data>
+  <data name="IDS_RIPFREEDB_ERRORCDDB" xml:space="preserve">
+    <value>Unable to retrieve CD Information</value>
+    <comment>Ошибка запроса CDDB информации</comment>
+  </data>
+  <data name="IDS_ERASECDRW_NOTERASE_CAPTION" xml:space="preserve">
+    <value>This disc is not rewritable</value>
+    <comment>Заголовок IDS_ERASECDRW_NOTERASE_CAPTION</comment>
+  </data>
+  <data name="tree_add_dirfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_add_dirfile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_AUDIOCD_WRONGFORMAT_CAPTION" xml:space="preserve">
+    <value>Wrong format</value>
+    <comment>Заголовок к IDS_AUDIOCD_WRONGFORMAT</comment>
+  </data>
+  <data name="burn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\burn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPFREEDB_ERRORREAD" xml:space="preserve">
+    <value>CD Drive is not ready or cannot read cd. Details:</value>
+    <comment>Ошибка чтения диска</comment>
+  </data>
+  <data name="analyze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\analyze.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPCD_TRACK" xml:space="preserve">
+    <value>Track {0:D02}</value>
+    <comment>Трек</comment>
+  </data>
+  <data name="IDS_ANALYZE_WRONGFILE_CAPTION" xml:space="preserve">
+    <value>Wrong format</value>
+    <comment>Заголовок IDS_ANALYZE_WRONGFILE</comment>
+  </data>
+  <data name="IDS_CONVERTPROCESS_CONVERT" xml:space="preserve">
+    <value>{0:D}/{1:D} files converting is in progress</value>
+    <comment>Конвертируется файл X из Y</comment>
+  </data>
+  <data name="IDS_MUSICBURN_ADDINGFILES" xml:space="preserve">
+    <value>Adding files to the disk structure</value>
+    <comment>Добавление файлов в структуру диска</comment>
+  </data>
+  <data name="IDS_ANALYZEPROCESS_CURRENTFILE" xml:space="preserve">
+    <value>Current file: {0:C}</value>
+    <comment>Текущий анализируемый файл</comment>
+  </data>
+  <data name="IDS_TRIAL_CONVERT" xml:space="preserve">
+    <value>Unregistered version allows to convert only 30% of original track</value>
+    <comment>Сообщение в незарегистрированной версии при конвертировании треков</comment>
+  </data>
+  <data name="prev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\prev.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tree_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_TABAUDIO" xml:space="preserve">
+    <value>Audio CD Creator</value>
+    <comment>Закладка создания AudioCD</comment>
+  </data>
+  <data name="tree_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\del.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_ANALYZE_WRONGFILE" xml:space="preserve">
+    <value>'{0:C}' file is in wrong format</value>
+    <comment>Неправильный формат файла</comment>
+  </data>
+  <data name="mp3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\mp3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_ERASECDRW_OK" xml:space="preserve">
+    <value>Disc erasing  was successfully completed</value>
+    <comment>Стирание прошло успешно</comment>
+  </data>
+  <data name="IDS_RIPPROCESS_ERRORTMP_CAPTION" xml:space="preserve">
+    <value>Error</value>
+    <comment>Заголовок IDS_RIPPROCESS_ERRORTMP</comment>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_AUDIOBURN_CREATING" xml:space="preserve">
+    <value>Creating track #{0:D} of {1:D} tracks list</value>
+    <comment>Создание трека X из Y</comment>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\about.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_REGISTRATION_OK" xml:space="preserve">
+    <value>Thank you. {0:S} has been registered!</value>
+    <comment>Сообщение в случае успешной регистрации</comment>
+  </data>
+  <data name="IDS_RIPCD_MENU_SELECTALL" xml:space="preserve">
+    <value>Select All</value>
+    <comment>Выделить все</comment>
+  </data>
+  <data name="IDS_DISKINFO_TRACK" xml:space="preserve">
+    <value>Start: {0:D02}:{1:D02}  Finish: {2:D02}:{3:D02}  Length: {4:D02}:{5:D02},</value>
+    <comment>Дорожка в диалоге информации о диске</comment>
+  </data>
+  <data name="IDS_MUSICCD_DELNODE_CAPTION" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Заголовок IDS_MUSICCD_DELNODE</comment>
+  </data>
+  <data name="IDS_DISKINFO_TRACKSIZE" xml:space="preserve">
+    <value>Size: {0:F2} Mb</value>
+    <comment>Размер дорожки</comment>
+  </data>
+  <data name="IDS_ERASECDRW_FULL" xml:space="preserve">
+    <value>If the full mode is selected then all old data will be deleted</value>
+    <comment>Информация о полном методе стирания диска</comment>
+  </data>
+  <data name="IDS_RIPPROCESS_MERGE" xml:space="preserve">
+    <value>Merge of files is in process</value>
+    <comment>Объединение дорожек</comment>
+  </data>
+  <data name="IDS_DEVICENOTFOUND" xml:space="preserve">
+    <value>CD or DVD device is not found</value>
+    <comment>Не найдено ни одного привода CD или DVD</comment>
+  </data>
+  <data name="IDS_AUDIOCD_INSERTBLANK" xml:space="preserve">
+    <value>Please insert a blank CD!</value>
+    <comment>Вставьте чистый диск</comment>
+  </data>
+  <data name="IDS_TRIAL_AUDIO" xml:space="preserve">
+    <value>Unregistered version allows to burn only the first five tracks</value>
+    <comment>Сообщение в незарегистрированной версии при записи Audio CD</comment>
+  </data>
+  <data name="IDS_ANALYZE_NOTAUDIOCD" xml:space="preserve">
+    <value>The disc inserted is not an Audio CD</value>
+    <comment>Диск не является Audio CD</comment>
+  </data>
+  <data name="ie2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\ie2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPCD_UNKNOWARTIST" xml:space="preserve">
+    <value>Unknow Artist</value>
+    <comment>Неизвестный артист</comment>
+  </data>
+  <data name="IDS_MUSICBURN_COMPLETE" xml:space="preserve">
+    <value>Burning is complete!</value>
+    <comment>Прожиг выполнен успешно</comment>
+  </data>
+  <data name="IDS_CONVERTPROCESS_UNABLEDELETE" xml:space="preserve">
+    <value>Unable to delete file {0:C}</value>
+    <comment>Нельзя удалить файл</comment>
+  </data>
+  <data name="tree_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPCD_ARTIST" xml:space="preserve">
+    <value>Artist {0:D02}</value>
+    <comment>Артист</comment>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_CAPTION_ANALYZE" xml:space="preserve">
+    <value>Sound Analyzer :: Audio One Pack</value>
+    <comment>Заголовок окна анализа звука</comment>
+  </data>
+  <data name="IDS_TABRIP" xml:space="preserve">
+    <value>Audio CD Ripper</value>
+    <comment>Закладка граббинга</comment>
+  </data>
+  <data name="IDS_RIPCD_MENU_UNSELECTALL" xml:space="preserve">
+    <value>Unselect All</value>
+    <comment>Снять выделение со всех</comment>
+  </data>
+  <data name="IDS_TRIAL_CAPTION" xml:space="preserve">
+    <value>Unregistered version</value>
+    <comment>Заголовок сообщения о незарегистрированной версии</comment>
+  </data>
+  <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\quit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_AUDIOBURN_DECODING" xml:space="preserve">
+    <value>Files decoding...</value>
+    <comment>Декодирование файла</comment>
+  </data>
+  <data name="IDS_AUDIOCD_WRONGFORMAT" xml:space="preserve">
+    <value>'{0:C}' file is in wrong format</value>
+    <comment>Неправильный формат файла</comment>
+  </data>
+  <data name="IDS_RIPCD_GETCDDB_CAPTION" xml:space="preserve">
+    <value>Query for a CDDB server information is in process</value>
+    <comment>Заголовок IDS_RIPCD_GETCDDB</comment>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_TRIAL_RIP" xml:space="preserve">
+    <value>Unregistered version allows to rip only 30% of original track</value>
+    <comment>Сообщение в незарегистрированной версии при старте риппинга</comment>
+  </data>
+  <data name="IDS_ERASECDRW_OK_CAPTION" xml:space="preserve">
+    <value>Completed</value>
+    <comment>Заголовок сообщения IDS_ERASECDRW_OK</comment>
+  </data>
+  <data name="tree_add_dir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_add_dir.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_ANALYZE_UNKNOWQUALITY" xml:space="preserve">
+    <value>unknow</value>
+    <comment>Неизвестное качество</comment>
+  </data>
+  <data name="IDS_MUSICCD_ERRORCDSIZE" xml:space="preserve">
+    <value>There is not enough space to burn this compilation onto this disc! Please, remove the extra files</value>
+    <comment>На диске не хватает места. Удалите файлы.</comment>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPPROCESS_ENCODE" xml:space="preserve">
+    <value>{0:D}/{1:D} files encoding is in progress</value>
+    <comment>Кодирование файла X из Y</comment>
+  </data>
+  <data name="IDS_AUDIOBURN_ERRORTMP" xml:space="preserve">
+    <value>Error attempting to create temporary files</value>
+    <comment>Ошибка создания временных файлов</comment>
+  </data>
+  <data name="IDS_TABANALYZER" xml:space="preserve">
+    <value>Sound Analyzer</value>
+    <comment>Закладка анализа музыки</comment>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\convert.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_AUDIOBURN_COMPLETE" xml:space="preserve">
+    <value>Burning is complete!</value>
+    <comment>Прожиг Audio CD завершен</comment>
+  </data>
+  <data name="IDS_ISRUN_CAPTION" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Заголовок сообщения IDS_ISRUN_WARNING</comment>
+  </data>
+  <data name="tree_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_CAPTION_AUDIO" xml:space="preserve">
+    <value>Audio CD Creator :: Audio One Pack</value>
+    <comment>Заголовок окна создания Audio CD</comment>
+  </data>
+  <data name="IDS_RIPFREEDB_NOTREADY" xml:space="preserve">
+    <value>CD Drive is not ready. Please check drive:</value>
+    <comment>Привод не готов. Проверьте его.</comment>
+  </data>
+  <data name="IDS_TRIAL_ANALYZE" xml:space="preserve">
+    <value>Unregistered version allows to analyze only the first three tracks!</value>
+    <comment>Сообщение появляется при анализе звука если программ не зарегистрированна</comment>
+  </data>
+  <data name="IDS_ISRUN_WARNING" xml:space="preserve">
+    <value>Audio One Pack software is already running!</value>
+    <comment>Сообщение появляется при старте, если программа уже запущена</comment>
+  </data>
+  <data name="IDS_RIPCD_GETCDDB" xml:space="preserve">
+    <value>Would you like to get information about this CD album from a CDDB server?</value>
+    <comment>Получить CDDB информацию о диске</comment>
+  </data>
+  <data name="IDS_ERASECDRW_QUICK" xml:space="preserve">
+    <value>The quick mode does not physically erase data on the disk, but only deletes the area with the description of the disk contents.</value>
+    <comment>Информация о быстром методе стирания диска</comment>
+  </data>
+  <data name="IDS_AUDIOCD_UNABLEADD_CAPTION" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Заголовок IDS_AUDIOCD_UNABLEADD</comment>
+  </data>
+  <data name="IDS_CAPTION_MUSIC" xml:space="preserve">
+    <value>Music CD Creator :: Audio One Pack</value>
+    <comment>Заголовок окна создания музыкального CD</comment>
+  </data>
+  <data name="IDS_MUSICCD_DELNODE" xml:space="preserve">
+    <value>Are you sure that you want to delete?</value>
+    <comment>Удаление выбранной ноды</comment>
+  </data>
+  <data name="IDS_AUDIOBURN_WAIT" xml:space="preserve">
+    <value>Please wait...</value>
+    <comment>Пожалуйста подождите</comment>
+  </data>
+  <data name="tree_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_MUSICCD_NEWFOLDER" xml:space="preserve">
+    <value>New Folder</value>
+    <comment>Новая папка</comment>
+  </data>
+  <data name="tree_add_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tree_add_file.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_RIPCD_MENU_UNSELECT" xml:space="preserve">
+    <value>Unselect</value>
+    <comment>Снять выделение</comment>
+  </data>
+  <data name="IDS_RIPFREEDB_ERRORQUERY" xml:space="preserve">
+    <value>Query did not succeed: </value>
+    <comment>Код ошибки</comment>
+  </data>
+  <data name="refresh_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\refresh_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_LICENSE_ANALYZE" xml:space="preserve">
+    <value>Sound Analyzer</value>
+    <comment>Наименование лицензии на анализ звука</comment>
+  </data>
+  <data name="IDS_LICENSE_AUDIO" xml:space="preserve">
+    <value>Audio CD Creator</value>
+    <comment>Наименование лицензии на создание Audio CD</comment>
+  </data>
+  <data name="IDS_LICENSE_CONVERT" xml:space="preserve">
+    <value>Music Converter</value>
+    <comment>Наименование лицензии на конвертирование музыки</comment>
+  </data>
+  <data name="IDS_LICENSE_FULL" xml:space="preserve">
+    <value>Full</value>
+    <comment>Наименование полной лицензии</comment>
+  </data>
+  <data name="IDS_LICENSE_MUSIC" xml:space="preserve">
+    <value>Music CD Creator</value>
+    <comment>Наименование лицензии на создание Music CD</comment>
+  </data>
+  <data name="IDS_LICENSE_RIP" xml:space="preserve">
+    <value>Audio CD Ripper</value>
+    <comment>Наименование лицензии на граббинг</comment>
+  </data>
+  <data name="IDS_AUDIOCD_EMPTYTEXT" xml:space="preserve">
+    <value>Выберите музыкальные треки для записи Audio CD</value>
+    <comment>Выберите музыкальные треки для записи Audio CD</comment>
+  </data>
+  <data name="IDS_RIPCD_EMPTYTEXT" xml:space="preserve">
+    <value>Пожалуйста вставьте Audio CD</value>
+    <comment>Пожалуйста вставьте Audio CD</comment>
+  </data>
+  <data name="IDS_QUICKERASE" xml:space="preserve">
+    <value>Диск не пустой. Выполнить быстрое стирание диска?</value>
+    <comment>Диск не пустой. Выполнить быстрое стирание диска ?</comment>
+  </data>
+  <data name="IDS_QUICKERASE_CAPTION" xml:space="preserve">
+    <value>Диск не пустой</value>
+    <comment>Диск не пустой</comment>
+  </data>
+</root>

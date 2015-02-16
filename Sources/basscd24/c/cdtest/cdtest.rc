@@ -1,0 +1,46 @@
+#include "windows.h"
+
+1000 DIALOG DISCARDABLE  100, 100, 250, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BASSCD test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        10,5,5,170,69,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interface:",-1,178,8,31,8
+    COMBOBOX        19,210,5,35,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Progress1",40,"msctls_progress32",WS_BORDER,5,21,240,6
+    CONTROL         "Progress1",41,"msctls_progress32",WS_BORDER,5,27,240,6
+    LISTBOX         11,5,38,135,115,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Position",-1,145,34,100,39
+    CTEXT           "",22,150,44,90,12,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Slider1",30,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | 
+                    WS_TABSTOP,148,58,94,12
+    PUSHBUTTON      "Play / Pause",12,145,78,100,12
+    CONTROL         "Auto advance",13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    152,101,61,10
+    GROUPBOX        "Speed",50,145,119,70,24
+    CONTROL         "Slider1",32,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,148,128,64,12
+    GROUPBOX        "Vol",-1,222,94,23,49
+    CONTROL         "Slider1",31,"msctls_trackbar32",TBS_VERT | TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,228,101,12,40
+    GROUPBOX        "Door",-1,145,145,100,24
+    CHECKBOX        "Open",14,157,155,33,10,BS_FLAT
+    CHECKBOX        "Lock",15,205,155,32,10,BS_FLAT
+    CONTROL         "Get titles from FreeDB",16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,158,85,10
+END
+
+1001 DIALOG DISCARDABLE  0, 0, 200, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Multiple matches"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,54,50,12
+    LTEXT           "There are multiple CDs with the same ID, select your CD:",
+                    -1,5,4,180,8
+    LISTBOX         10,5,15,190,35,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END

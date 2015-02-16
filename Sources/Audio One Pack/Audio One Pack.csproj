@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{247EB2A7-A5AB-4917-B783-4F33967D58D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AudioOnePack</RootNamespace>
+    <AssemblyName>Audio One Pack</AssemblyName>
+    <ApplicationIcon>disc.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(SolutionDir)\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C1F13B381454D102770FE56892485CC1F039C291</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Audio One Pack_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyzer\AnalyzerProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyzer\AnalyzerProcess.Designer.cs">
+      <DependentUpon>AnalyzerProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyzer\AnalyzerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyzer\AnalyzerForm.Designer.cs">
+      <DependentUpon>AnalyzerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOPForm.Designer.cs">
+      <DependentUpon>AOPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDForm.Designer.cs">
+      <DependentUpon>AudioCDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDBurn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDBurn.Designer.cs">
+      <DependentUpon>AudioCDBurn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Convert\ConvertProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Convert\ConvertProcess.Designer.cs">
+      <DependentUpon>ConvertProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Convert\ConvertOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Convert\ConvertOptions.Designer.cs">
+      <DependentUpon>ConvertOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Convert\ConvertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Convert\ConvertForm.Designer.cs">
+      <DependentUpon>ConvertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CueSharp.cs" />
+    <Compile Include="DiscInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscInfoForm.Designer.cs">
+      <DependentUpon>DiscInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDEditTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDEditTrack.Designer.cs">
+      <DependentUpon>AudioCDEditTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EraseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EraseForm.Designer.cs">
+      <DependentUpon>EraseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOPAPI.cs">
+    </Compile>
+    <Compile Include="FindDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindDevice.Designer.cs">
+      <DependentUpon>FindDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FreeDB\CDEntry.cs" />
+    <Compile Include="FreeDB\FreedbHelper.cs" />
+    <Compile Include="FreeDB\QueryResult.cs" />
+    <Compile Include="ID3\ArrayFrames.cs" />
+    <Compile Include="ID3\BinaryFrame.cs" />
+    <Compile Include="ID3\Collection.cs" />
+    <Compile Include="ID3\Enumerations.cs" />
+    <Compile Include="ID3\FileStreamEx.cs" />
+    <Compile Include="ID3\FramesInfo.cs" />
+    <Compile Include="ID3\ID3.cs" />
+    <Compile Include="ID3\ID3Error.cs" />
+    <Compile Include="ID3\ID3Info.cs" />
+    <Compile Include="ID3\ID3v1.cs" />
+    <Compile Include="ID3\ID3v2.cs" />
+    <Compile Include="ID3\ID3v2Frames namespace.cs" />
+    <Compile Include="ID3\Other.cs" />
+    <Compile Include="ID3\StreamFrames.cs" />
+    <Compile Include="ID3\TextFrame.cs" />
+    <Compile Include="MapiApi.cs" />
+    <Compile Include="MusicCD\MusicCDBurn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDBurn.Designer.cs">
+      <DependentUpon>MusicCDBurn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDSize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDSize.Designer.cs">
+      <DependentUpon>MusicCDSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDAddFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDAddFolder.Designer.cs">
+      <DependentUpon>MusicCDAddFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDOptions.Designer.cs">
+      <DependentUpon>MusicCDOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCD\MusicCDForm.Designer.cs">
+      <DependentUpon>MusicCDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyzer\AnalyzerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalyzerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyzer\AnalyzerProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalyzerProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOPForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AOPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioCD\AudioCDForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AudioCDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioCD\AudioCDBurn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AudioCDBurn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Convert\ConvertProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Convert\ConvertForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Convert\ConvertOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DiscInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioCD\AudioCDEditTrack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AudioCDEditTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EraseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EraseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindDevice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCD\MusicCDBurn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicCDBurn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCD\MusicCDSize.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicCDSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCD\MusicCDAddFolder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicCDAddFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCD\MusicCDOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicCDOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCD\MusicCDForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicCDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ripping\RipCDForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RipCDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ripping\RipEditTrack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RipEditTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ripping\RipFreeDb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RipFreeDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ripping\RipProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RipProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ripping\RipOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RipOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanDisk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScanDisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioCD\AudioCDOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AudioCDOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendError.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SendError.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ripping\RipCDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripping\RipCDForm.Designer.cs">
+      <DependentUpon>RipCDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ripping\RipEditTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripping\RipEditTrack.Designer.cs">
+      <DependentUpon>RipEditTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ripping\RipFreeDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripping\RipFreeDb.Designer.cs">
+      <DependentUpon>RipFreeDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ripping\RipProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripping\RipProcess.Designer.cs">
+      <DependentUpon>RipProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ripping\RipOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ripping\RipOptions.Designer.cs">
+      <DependentUpon>RipOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanDisk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanDisk.Designer.cs">
+      <DependentUpon>ScanDisk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudioCD\AudioCDOptions.Designer.cs">
+      <DependentUpon>AudioCDOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendError.Designer.cs">
+      <DependentUpon>SendError.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\burn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\disc info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="images\erasecd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ie2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="disc.ico" />
+    <None Include="images\refresh_small.png" />
+    <None Include="images\analyze.png" />
+    <None Include="images\tree_down.png" />
+    <None Include="images\tree_up.png" />
+    <None Include="images\tree_right.png" />
+    <None Include="images\tree_left.png" />
+    <None Include="images\tree_add_file.png" />
+    <None Include="images\tree_add_dirfile.png" />
+    <None Include="images\tree_add_dir.png" />
+    <None Include="images\tree_delete.png" />
+    <None Include="images\convert.png" />
+    <None Include="images\convert24.png" />
+    <None Include="images\mp3.png" />
+    <None Include="images\refresh.png" />
+    <None Include="images\rip.png" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

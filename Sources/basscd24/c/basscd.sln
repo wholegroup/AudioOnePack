@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{745AF78F-6D90-4198-B154-E9BE4C582EA4}") = "cdtest", "cdtest\cdtest.vcproj", "{4D3791F5-322B-4208-9CAA-F4FA6E2B6B7B}"
+EndProject
+Project("{745AF78F-6D90-4198-B154-E9BE4C582EA4}") = "writewav", "writewav\writewav.vcproj", "{66471B15-494C-4833-856F-DA67F6F621B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D3791F5-322B-4208-9CAA-F4FA6E2B6B7B}.Release|Win32.ActiveCfg = Release|Win32
+		{4D3791F5-322B-4208-9CAA-F4FA6E2B6B7B}.Release|Win32.Build.0 = Release|Win32
+		{4D3791F5-322B-4208-9CAA-F4FA6E2B6B7B}.Release|x64.ActiveCfg = Release|x64
+		{4D3791F5-322B-4208-9CAA-F4FA6E2B6B7B}.Release|x64.Build.0 = Release|x64
+		{66471B15-494C-4833-856F-DA67F6F621B1}.Release|Win32.ActiveCfg = Release|Win32
+		{66471B15-494C-4833-856F-DA67F6F621B1}.Release|Win32.Build.0 = Release|Win32
+		{66471B15-494C-4833-856F-DA67F6F621B1}.Release|x64.ActiveCfg = Release|x64
+		{66471B15-494C-4833-856F-DA67F6F621B1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
