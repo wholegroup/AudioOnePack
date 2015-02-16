@@ -1,0 +1,12 @@
+﻿#
+*.suo
+*.user
+*.aps
+*.ncb
+*.sdf
+[Dd]istrib
+[Ss]ources/vs2010/[Rr]elease
+[Ss]ources/vs2010/[Dd]ebug
+[Ss]ources/vs2010/x64
+[Ss]ources/vs2010/ipch/
+Icons.wxs
